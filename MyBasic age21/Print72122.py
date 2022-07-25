@@ -25,6 +25,10 @@ print('5+4 = ' +str(5+4))
 print("I'm anirach", "I'll keep practicing!")
 print(1,2,3,4,5,6,7,8,)
 print('%d %d %d %d %d' %(1,2,3,4,5))
+print('thanormsak')
+print('3.99')
+print(True)
+print(False)
 
 
 
