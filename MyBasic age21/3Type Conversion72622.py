@@ -13,3 +13,4 @@ print(type(y))
 print(type(z))
 print(result)
 
+print(float(z))
