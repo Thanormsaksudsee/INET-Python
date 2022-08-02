@@ -29,9 +29,14 @@ print('thanormsak')
 print('3.99')
 print(True)
 print(False)
-
-
-
+sentence = 'She said, "That is a great tasting apple!" '
+print(sentence)
+sentence = " That's a great tasting apple! "
+print(sentence)
+double = "She said, \"That 's a great tasting apple! \" "
+print(double)
+single = 'She said, "That\'s a great tasting apple! " '
+print(single)
 
 
 
