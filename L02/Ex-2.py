@@ -1,11 +1,13 @@
-Hoursworked = float(input('Enter the number of Hours worked : '))
-payrate = float(input('Enter the hourly pay rate : '))
+workedhours = float(input('Enter the numver of hours worked: '))
+payrate = float(input("Enter the hourly pay rate: "))
 
-Thegrosspayhoursworked  = Hoursworked*payrate
-HoursworkedOT  = (40*payrate)+(Hoursworked-40*(1.5*payrate))
+OT = workedhours - 40
 
-if Hoursworked > 40:
-    print('The gross pay hours worked is $' ,Thegrosspayhoursworked )
+if workedhours > 40:
+    Overworked = (40*payrate)+(OT*(1.5*payrate))
+    print('The gross pay is ${:,.2f} '  .format(Overworked))
 else :
-    print('The gross pay hours worked is $' ,HoursworkedOT )
+    worked = workedhours * payrate
+    print('The gross pay is ${:,.2f} '  .format(worked))
 
+                          
