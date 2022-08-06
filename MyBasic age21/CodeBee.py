@@ -1,8 +1,7 @@
 print("please select operation - ")
 print(" 1 = add + \n 2 = subtract- \n 3 = multiply * \n 4 = divide /")
 select = int(input("select number to calculate: " ))
-num1 = int
-num2 = int
+
 
 if select == 1:
     num1 = int(input("Enter your number : "))

@@ -1,6 +1,6 @@
 TestScore = int(input("Enter you test score :"))
 
-if TestScore >= 90 :
+if   TestScore >= 90 :
     print('You grade is A.')
 elif TestScore >= 80 :
     print('You grade is B.')
