@@ -1,3 +1,4 @@
+
 workedhours = float(input('Enter the numver of hours worked: '))
 payrate = float(input("Enter the hourly pay rate: "))
 
