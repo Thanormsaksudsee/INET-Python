@@ -1,6 +1,6 @@
-KeepGoing = 'y'
+KeepGoing = 'n'
 
-while KeepGoing == 'y':
+while KeepGoing == 'n' :
     sales = float(input('Enter the amount of sales: '))
     CommRate = float(input('Enter the commission rate: '))
     

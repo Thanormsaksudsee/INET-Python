@@ -1,5 +1,3 @@
-from ctypes.wintypes import PINT
-
 
 def ss(a,b):
     for i in range(a,b+18):
