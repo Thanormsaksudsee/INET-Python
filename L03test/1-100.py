@@ -1,4 +1,9 @@
-for i in range(1):
-   while(i<=100):
-        print (i,' ',end='')
-        i+=1
+colum = int(input('Enter Colum'))
+
+
+for i in range(1,1001):
+    print(i,end=' ')
+    for j in range(0,1000,colum):
+        if i == j:
+            print('\n')
+    
