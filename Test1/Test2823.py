@@ -20,7 +20,7 @@ if  select == 1:
         print('Your name is ' ,name)
         print('Type of photo is One inch')
         print('Amount is ',amount)
-        print('Total price is = 65*',amount, price)
+        print('Total price is  65*%d = %d'%(amount,price))
         print('Discount', discout)
         print('Net price', net)    
 if  select == 2:
@@ -29,7 +29,8 @@ if  select == 2:
         print('Your name is ' ,name)
         print('Type of photo is Two inch')
         print('Amount is ',amount)
-        print('Total price is =80*',amount, price)
+        print('Total price is  80*%d = %d'%(amount,price))
+
     elif  amount >= 3:
         price = 80*amount
         discout = 80 * 0.05 * amount
@@ -37,7 +38,7 @@ if  select == 2:
         print('Your name is ' ,name)
         print('Type of photo is Two inch')
         print('Amount is ',amount)
-        print('Total price is =80*',amount, price)
+        print('Total price is  80*%d = %d'%(amount,price))
         print('Discount', discout)
         print('Net price', net)    
 if  select == 3:
@@ -46,6 +47,7 @@ if  select == 3:
         print('Your name is ' ,name)
         print('Type of photo is Polaroid')
         print('Amount is ',amount)
-        print('Total price is =70*',amount, price)
+        print('Total price is  70*%d = %d'%(amount,price))
+
 
 
