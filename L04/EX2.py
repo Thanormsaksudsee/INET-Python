@@ -1,16 +1,19 @@
-
 name = 'anirachmingkhan'
-index = 0
 
-while index < len(name) :
-    print(name.upper()[index],end='')
-    index += 1
-    if index < len(name) :
-        print(name.lower()[index],end='')
-        index += 1
+Start = 1
+uper = 3
 
 
-#ใหญ่1แล็ก1  ใหญ่2เล็ก1 ใหญ๋3เล็ก1
+for i in range(len(name)):
+    if i == Start :
+        print(name[i],end='')
+        Start += uper
+        uper += 1
+    else:
+        print(name[i].upper(),end='')
+
+        
+        #ใหญ่1แล็ก1  ใหญ่2เล็ก1 ใหญ๋3เล็ก1
 
 
 
