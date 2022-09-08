@@ -9,11 +9,13 @@ while(s):
     s=fhR.readline()
     l=s.split('\n')
     if len(s)>0:
-        if (l[0])==name:
+        if (l[0]) == name:
             name=input('Enter name : ')
+            fhW.write(name+'\n')
             ID=input('Enter ID : ')
+            fhW.write(ID+'\n')
             dept=input('Enter Dept : ')
-            fhW.write(name+'\n'+ID+'\n'+dept+'\n')
+            fhW.write(dept+'\n')
         else:
             fhW.write(s)
 fhW.close()
