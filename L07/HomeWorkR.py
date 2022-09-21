@@ -56,6 +56,8 @@ def main():
             DisSort()
         elif Select == 6:
             Exits()
+        else:
+            print('อย่าเปรี้ยวไอสัสพิมพ์ดีๆ')
             
         keep = input('Enter y for Moretime: ')
     
