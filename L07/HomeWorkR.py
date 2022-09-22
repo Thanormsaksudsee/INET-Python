@@ -2,7 +2,6 @@ heroes = ['Ironman', 'Thor', 'Hulk', 'Superman', 'Spiderman']
 
 def Display():
     print(heroes)
-    
 def add():
     Display()
     Hero = input('Add Heroes : ')
@@ -18,8 +17,7 @@ def Remove():
     Display()
     Hero = input('Remove Heroes : ')
     heroes.remove(Hero)
-    Display()
-    
+    Display() 
 def DisSort():
     heroes.sort()
     Display()
@@ -31,6 +29,7 @@ def Exits():
     if(name not in heroes):
         print(name , 'not found')
         Display()    
+
 
 def main():
     keep = 'y'
@@ -59,8 +58,6 @@ def main():
             print('อย่าเปรี้ยวไอสัสพิมพ์ดีๆ')
             
         keep = input('Enter y for Moretime: ')
-    
-
 main()
 
 
