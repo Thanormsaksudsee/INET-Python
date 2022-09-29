@@ -22,6 +22,10 @@ def Capital():
         if (i.isupper()):
             count +=1
             list.append(i)
+            
     print('Number of Capital: ',count,'[%s]' % ','.join(map(str,list)))
     
+    
+
+
 Capital()
