@@ -2,6 +2,7 @@ import pgzrun
 from random import randint, choice
 import string
 
+#indexการทำงาน
 WIDTH = 800
 HEIGHT = 500
 BLACK = (0, 0, 0)
@@ -11,7 +12,7 @@ ON_SCREEN_LETTERS = []
 VELOCITY = 1
 SCORE = {"RIGHT": 0, "WRONG": 0}
 
-
+#indexการทำงาน
 def draw():  # Pygame Zero draw function
     screen.clear()
     screen.fill(BLACK)
@@ -19,8 +20,9 @@ def draw():  # Pygame Zero draw function
         screen.draw.text(LETTER["letter"], (LETTER["x"], LETTER["y"]), fontsize=50, color=WHITE)
     screen.draw.text("RIGHT: " + str(SCORE["RIGHT"]), (WIDTH - 130, 10), fontsize=30, color=WHITE)
     screen.draw.text("WRONG: " + str(SCORE["WRONG"]), (WIDTH - 130, 40), fontsize=30, color=WHITE)
+    
 
-
+#ีupdate อัพเดตสกอร์บอร์ดพลาดปล่อยพลาด
 def update():
     for i, LETTER in enumerate(ON_SCREEN_LETTERS):
         LETTER["y"] += VELOCITY
@@ -30,7 +32,7 @@ def update():
     while len(ON_SCREEN_LETTERS) < 4:
         add_letter()
 
-
+#สกอร์บอร์ดกดถูก
 def on_key_down(key, mod, unicode):
     if unicode:
         for i, LETTER in enumerate(ON_SCREEN_LETTERS):
@@ -41,14 +43,14 @@ def on_key_down(key, mod, unicode):
         else:
             SCORE["WRONG"] += 1
 
-
+#random ตำแหน่งที่ตกลงมา
 def add_letter():
     letter = choice(string.ascii_letters).lower()
     x = randint(10, WIDTH - 20)
     y = 1
     ON_SCREEN_LETTERS.append({"letter": letter, "x": x, "y": y})
 
-
+#หายไปเมื่อพิมพ์ถูก
 def delete_letter(i):
     del ON_SCREEN_LETTERS[i]
     add_letter()
