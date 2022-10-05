@@ -5,6 +5,8 @@
 # Credit: Math = 3, English = 2, Science = 3, History = 2, Art = 1
 # Grade Level: A = 90, B = 80, C = 70, D = 60, F = 0
 
+
+
 Credits = {"Computer Programming": 3, "Math": 3, "English": 3, "Physic": 3, "Dance": 1, "Electronic": 3}
 Grade_Level = {"A": 80, "B": 70, "C": 60, "D": 50, "F": 0}
 Grade_Point = {"A": 4, "B": 3, "C": 2, "D": 1, "F": 0}
@@ -26,5 +28,41 @@ Mary       Computer Programming : F    Math : B    English : C    Physic : C    
 Tom        Computer Programming : A    Math : D    English : B    Physic : B    Dance : B    Electronic : A    GPA: 3.00
 Jane       Computer Programming : A    Math : A    English : A    Physic : B    Dance : A    Electronic : A    GPA: 3.81'''
 
-def one():
+def main():
+    for key in Students_Marks:
+        for value in Students_Marks["John"]:
+            if Students_Marks[key][value] >= 80:
+                Students_Marks[key][value] = 'A'
+            elif Students_Marks[key][value] >= 70:
+                Students_Marks[key][value] = 'B'
+            elif Students_Marks[key][value] >= 60:
+                Students_Marks[key][value] = 'C'
+            elif Students_Marks[key][value] >= 50:
+                Students_Marks[key][value] = 'D'
+            elif Students_Marks[key][value] <= 50:
+                Students_Marks[key][value] = 'F'
+    for i,j in Students_Marks.items():
+        print(i, '\t',j)
+
+def credits():
+    list = []
+    for key in Credits:
+        print(Credits[key])
+        list.append(Credits[key])
+        cred = sum(list)
+    print(cred)
+
+       
+def  gradeLevel():
+    list = []
+    for key in Students_Marks:
+        for value in Students_Marks["John"]:
+            print(Students_Marks[key][value])
+            list.append(Students_Marks[key][value])
+    print(list)
+gradeLevel()
+
+
+
+        
     
