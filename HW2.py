@@ -29,6 +29,10 @@ Tom        Computer Programming : A    Math : D    English : B    Physic : B    
 Jane       Computer Programming : A    Math : A    English : A    Physic : B    Dance : A    Electronic : A    GPA: 3.81'''
 
 def main():
+    list = []
+    for key in Credits:
+        list.append(Credits[key])
+        cred = sum(list)
     for key in Students_Marks:
         for value in Students_Marks["John"]:
             if Students_Marks[key][value] >= 80:
@@ -43,26 +47,6 @@ def main():
                 Students_Marks[key][value] = 'F'
     for i,j in Students_Marks.items():
         print(i, '\t',j)
-
-def credits():
-    list = []
-    for key in Credits:
-        print(Credits[key])
-        list.append(Credits[key])
-        cred = sum(list)
-    print(cred)
-
-       
-def  gradeLevel():
-    list = []
-    for key in Students_Marks:
-        for value in Students_Marks["John"]:
-            print(Students_Marks[key][value])
-            list.append(Students_Marks[key][value])
-    print(list)
-gradeLevel()
+main()
 
 
-
-        
-    
