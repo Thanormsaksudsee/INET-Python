@@ -34,7 +34,7 @@ def main():
         list.append(Credits[key])
         cred = sum(list)
     for key in Students_Marks:
-        for value in Students_Marks["John"]:
+        for value in Students_Marks["Peter"]:
             if Students_Marks[key][value] >= 80:
                 Students_Marks[key][value] = 'A'
             elif Students_Marks[key][value] >= 70:
@@ -46,7 +46,21 @@ def main():
             elif Students_Marks[key][value] <= 50:
                 Students_Marks[key][value] = 'F'
     for i,j in Students_Marks.items():
-        print(i, '\t',j)
-main()
+        print(i,'          ',j)
 
+
+def kio():
+    list1 = []
+    list2 = []
+    for j in Grade_Point:
+        print(Grade_Point[j])
+        list1.append(Grade_Point[j])
+    print(list1)
+    for key in Students_Marks:
+        for value in Students_Marks["John"]:
+            print(Students_Marks[key][value])
+            list2.append(Students_Marks[key][value])
+    print(list2)
+
+kio()
 
