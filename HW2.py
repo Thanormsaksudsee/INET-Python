@@ -49,7 +49,8 @@ def main():
         print(i,'          ',j)
 
 
-def kio():
+
+def kido():
     list1 = []
     list2 = []
     for j in Grade_Point:
@@ -61,6 +62,13 @@ def kio():
             print(Students_Marks[key][value])
             list2.append(Students_Marks[key][value])
     print(list2)
+    print(Grade_Point[j]*Students_Marks[key][value])
 
-kio()
+def bigMom():
+    for key in Students_Marks:
+        for value in Students_Marks["Peter"]:
+            print(Students_Marks[key][value])
+    for i,j in Students_Marks.items():
+        
+        print(i,'          ',j)
 
